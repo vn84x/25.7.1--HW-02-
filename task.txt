@@ -25,3 +25,22 @@ func main() {
 Создать feature ветку из develop для нового функционала, внести в ней нужные изменения, слить в develop.
 Создать release ветку из develop, создать новую метку (или тэг) с произвольным именем, смержить с master.
 Создать hotfix ветку из master, выполнить в ней срочные правки, смержить с master и develop.
+
+package main
+
+import (
+	"fmt"
+	"log"
+)
+
+func main() {
+	var input string
+
+	fmt.Print("Введите данные: ")
+	_, err := fmt.Scanln(&input)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("Вы ввели: %s\n", input)
+}
