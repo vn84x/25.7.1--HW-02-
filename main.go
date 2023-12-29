@@ -8,11 +8,11 @@ import (
 func main() {
 	var input string
 
-	fmt.Print("Введите целое число: ")
+	fmt.Print("Введите данные: ")
 	_, err := fmt.Scanln(&input)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("Вы ввели число: %s\n", input)
+	fmt.Printf("Вы ввели данные : %s\n", input)
 }
